@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Advent Calendar</title>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');</style>
     <style>
         body {
             background-image: url('https://img3.akspic.ru/attachments/crops/3/9/7/6/0/106793/106793-derevo-haus-zamorazhivanie-gora-sneg-750x1334.jpg');
@@ -20,86 +21,164 @@
         .button {
             display: inline-block;
             padding: 10px 20px;
-            font-size: 36px;
+            font-size: 42px;
             text-align: center;
             text-decoration: none;
-            border-width: 1px;
+            border-width: 1.8px;
             border-color: lightgray;
             border-radius: 9px;
-            margin: 5px;
+            margin: 8px;
             cursor: pointer;
-            height: 110px;
-            width: 80px;
+            height: 145px;
+            width: 100px;
             position: relative;
             background-color: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(1.7px);
+            backdrop-filter: blur(2.5px);
             color: #fff;
+            left: 20px;
+            top: 400px;
+            bottom: 10px;
+            font-family: 'Anton', sans-serif;
         }
 
         .num {
-            background-color: black;
+            background-color: none;
             text-color: white;
-            width: 28px;
-            height: 15px;
+            width: 38px;
+            height: 17px;
             border: solid #000;
-            border-width: 1px;
-            border-color: red;
-            border-radius: 15px;
+            border-width: 1.8px;
+            border-color: lightgray;
+            border-radius: 30px;
             position: absolute;
-            top: 91px;
-            left: 48px;
-            font-size: 8px;
+            bottom: 3.6px;
+            right: 3px;
+            font-size: 12px;
+            font-family: Arial, sans-serif;
         }
 
-        .num span {
-            text-color: red;
+        p {
+            margin-top: 1.25px;
+        }
+
+        .acc {
+            background-image: url('https://thumbs.dreamstime.com/z/isolated-green-tick-icon-symbol-112032910.jpg');
+            text-align: center;
+            width: 25px;
+            height: 25px;
+            border: solid #000;
+            border-width: 1.8px;
+            border-color: lightgray;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 3.6px;
+            left: 3px;
+        }
+
+        .snow {
+            width: 100%;
+            height: 50px;
+            background-image: url('https://freepngclipart.com/download/winter/51428-snowdrift-computer-snow-icons-png-file-hd.png');
+            background-size: cover;
+            position: absolute;
+            top: -12px;
+            left: -2px;
+        }
+
+        #pdr {
+            display: none;
+            background: none;
         }
     </style>
 </head>
 <body>
-    <div>
-        <button class="button">1
-            <div class="num"><span>16.12</span></div>
+    <div id="main">
+        <button class="button" id="num1">1
+            <div class="num"><p>14.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">2
-            <div class="num"><span>17.12</span></div>
+            <div class="num"><p>15.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">3
-            <div class="num"><span>18.12</span></div>
+            <div class="num"><p>16.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">4
-            <div class="num"><span>19.12</span></div>
+            <div class="num"><p>17.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">5
-            <div class="num"><span>20.12</span></div>
+            <div class="num"><p>18.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">6
-            <div class="num"><span>21.12</span></div>
+            <div class="num"><p>19.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">7
-            <div class="num"><span>22.12</span></div>
+            <div class="num"><p>20.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">8
-            <div class="num"><span>23.12</span></div>
+            <div class="num"><p>21.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">9
-            <div class="num"><span>24.12</span></div>
+            <div class="num"><p>22.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">10
-            <div class="num"><span>25.12</span></div>
+            <div class="num"><p>23.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">11
-            <div class="num"><span>26.12</span></div>
+            <div class="num"><p>24.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">12
-            <div class="num"><span>27.12</span></div>
+            <div class="num"><p>25.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">13
-            <div class="num"><span>28.12</span></div>
+            <div class="num"><p>26.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
         <button class="button">14
-            <div class="num"><span>29.12</span></div>
+            <div class="num"><p>27.12</p></div>
+            <div class="acc"><span></span></div>
+            <div class="snow"></div>
         </button>
     </div>
+    <div id="pdr">
+        <h1>Поздравляем!🎉</h1>
+        <p>Ваш идеальный Хаб для Мероприятий:</p>
+        <p>Площадка с Уютными Рабочими Местами, Event-Зоной, Баром и Техническим оборудованием!🚀</p>
+        <button id="pl">Получить</button>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let num1 = document.getElementById('num1');
+
+        num1.addEventListener('click', () => {
+            document.getElementById('main').modal.style.display = 'none';
+            document.getElementById('pdr').modal.style.display = 'block';
+        });
+    </script>
 </body>
 </html>

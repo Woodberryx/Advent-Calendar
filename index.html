@@ -5,54 +5,101 @@
     <title>Advent Calendar</title>
     <style>
         body {
-          background-image: url('https://mykaleidoscope.ru/x/uploads/posts/2022-10/1666329374_11-mykaleidoscope-ru-p-novogodnee-osveshchenie-zagorodnogo-doma-o-12.jpg');
-          background-size: auto;
-          font-family: Arial, sans-serif;
-          margin: 0;
-          padding: 0;
+            background-image: url('https://img3.akspic.ru/attachments/crops/3/9/7/6/0/106793/106793-derevo-haus-zamorazhivanie-gora-sneg-750x1334.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         .button {
-          display: inline-block;
-          padding: 10px 20px;
-          font-size: 36px;
-          text-align: center;
-          text-decoration: none;
-          border-width: 1px;
-          border-color: gray;
-          border-radius: 9px;
-          margin: 5px;
-          cursor: pointer;
-          height: 110px;
-          width: 80px;
-          background-color: rgba(255, 255, 255, 0.6);
-          background-filter: 5px;
-          color: #fff;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 36px;
+            text-align: center;
+            text-decoration: none;
+            border-width: 1px;
+            border-color: lightgray;
+            border-radius: 9px;
+            margin: 5px;
+            cursor: pointer;
+            height: 110px;
+            width: 80px;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(1.7px);
+            color: #fff;
         }
 
-        .button:hover {
-          background-color: rgba(255, 255, 255, 0.6);
-          height: 113px;
-          width: 83px;
+        .num {
+            background-color: black;
+            text-color: white;
+            width: 28px;
+            height: 15px;
+            border: solid #000;
+            border-width: 1px;
+            border-color: red;
+            border-radius: 15px;
+            position: absolute;
+            top: 91px;
+            left: 48px;
+            font-size: 8px;
+        }
+
+        .num span {
+            text-color: red;
         }
     </style>
 </head>
 <body>
-    <div id="main">
-        <button class="button">1</button>
-        <button class="button">2</button>
-        <button class="button">3</button>
-        <button class="button">4</button>
-        <button class="button">5</button>
-        <button class="button">6</button>
-        <button class="button">7</button>
-        <button class="button">8</button>
-        <button class="button">9</button>
-        <button class="button">10</button>
-        <button class="button">11</button>
-        <button class="button">12</button>
-        <button class="button">13</button>
-        <button class="button">14</button>
+    <div>
+        <button class="button">1
+            <div class="num"><span>16.12</span></div>
+        </button>
+        <button class="button">2
+            <div class="num"><span>17.12</span></div>
+        </button>
+        <button class="button">3
+            <div class="num"><span>18.12</span></div>
+        </button>
+        <button class="button">4
+            <div class="num"><span>19.12</span></div>
+        </button>
+        <button class="button">5
+            <div class="num"><span>20.12</span></div>
+        </button>
+        <button class="button">6
+            <div class="num"><span>21.12</span></div>
+        </button>
+        <button class="button">7
+            <div class="num"><span>22.12</span></div>
+        </button>
+        <button class="button">8
+            <div class="num"><span>23.12</span></div>
+        </button>
+        <button class="button">9
+            <div class="num"><span>24.12</span></div>
+        </button>
+        <button class="button">10
+            <div class="num"><span>25.12</span></div>
+        </button>
+        <button class="button">11
+            <div class="num"><span>26.12</span></div>
+        </button>
+        <button class="button">12
+            <div class="num"><span>27.12</span></div>
+        </button>
+        <button class="button">13
+            <div class="num"><span>28.12</span></div>
+        </button>
+        <button class="button">14
+            <div class="num"><span>29.12</span></div>
+        </button>
     </div>
 </body>
 </html>

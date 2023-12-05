@@ -7,7 +7,7 @@ dp = Dispatcher(bot=bot)
 
 #Keyboards
 acm = InlineKeyboardMarkup()
-acm.add(InlineKeyboardButton(text='Advent Calendar IT MY HUB', web_app=WebAppInfo(url='file:///C:/Users/Kovil/PycharmProjects/adventcalendarbot/index.html')))
+acm.add(InlineKeyboardButton(text='Advent Calendar IT MY HUB', web_app=WebAppInfo(url='https://api.render.com/deploy/srv-cln3q8nfeb2c73egd0eg?key=L7aGrycYS9A')))
 
 @dp.message_handler(commands=['start'])
 async def cmd_start(message: types.Message):

@@ -62,7 +62,7 @@
         }
 
         .acc {
-            background-image: url('https://thumbs.dreamstime.com/z/isolated-green-tick-icon-symbol-112032910.jpg');
+            background-color: none;
             text-align: center;
             width: 25px;
             height: 25px;
@@ -87,15 +87,25 @@
 
         #pdr {
             display: none;
-            background: none;
+        }
+
+        .test {
+            height: 50px;
+            width: 50px;
+            border: solid #000;
+            border-width: 1px;
+            border-radius: 5px;
+            background-color: white;
+            left: 50%;
+            bottom: 250px;
         }
     </style>
 </head>
 <body>
     <div id="main">
-        <button class="button" id="num1">1
-            <div class="num"><p>14.12</p></div>
-            <div class="acc"><span></span></div>
+        <button class="button" id="bt1">1
+            <div class="num" id="num1"><p>14.12</p></div>
+            <div class="acc" id="acc1"><span></span></div>
             <div class="snow"></div>
         </button>
         <button class="button">2
@@ -165,17 +175,14 @@
         </button>
     </div>
     <div id="pdr">
-        <h1>Поздравляем!🎉</h1>
-        <p>Ваш идеальный Хаб для Мероприятий:</p>
-        <p>Площадка с Уютными Рабочими Местами, Event-Зоной, Баром и Техническим оборудованием!🚀</p>
-        <button id="pl">Получить</button>
+        <button class="test">Привет мир!</button>
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
-        let num1 = document.getElementById('num1');
+        let bt1 = document.getElementById('bt1');
 
-        num1.addEventListener('click', () => {
+        bt1.addEventListener('click', function() {
             document.getElementById('main').modal.style.display = 'none';
             document.getElementById('pdr').modal.style.display = 'block';
         });
